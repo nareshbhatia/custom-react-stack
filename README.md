@@ -11,7 +11,7 @@ to slot it in!
 
 ## Development Build
 
-```
+```bash
 npm install
 npm run dev
 ```
@@ -31,7 +31,22 @@ apps:
 
 To build all apps and packages, run the following command:
 
-```
+```bash
 npm install
 npm run build
 ```
+
+## Running Storybook
+
+```bash
+cd storybook
+npm install
+npm run storybook  # you can also run it from the root directory
+```
+
+## TODO
+
+- Update dependencies on `@storybook/react` from `next` to the latest version
+  when
+  [this Storybook issue](https://github.com/storybookjs/storybook/issues/17831)
+  is fixed (add support for React 18).
