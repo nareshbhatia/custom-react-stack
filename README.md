@@ -56,6 +56,5 @@ npm run storybook  # you can also run it from the root directory
 ## TODO
 
 - Update dependencies on `@storybook/react` from `next` to the latest version
-  when
-  [this Storybook PR](https://github.com/storybookjs/storybook/pull/17215)
+  when [this Storybook PR](https://github.com/storybookjs/storybook/pull/17215)
   gets merged (add support for React 18).

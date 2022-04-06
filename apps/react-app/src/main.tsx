@@ -4,14 +4,25 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { App } from './App';
 import '../../../packages/ui-lib/src/styles/main.css';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+// Start mock service worker in dev environment
+async function startMockServiceWorker() {
+  if (import.meta.env.DEV) {
+    const { worker } = await import('./mocks/browser');
+    await worker.start();
+    worker.printHandlers();
+  }
+}
 
-root.render(
-  <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
-  </React.StrictMode>
-);
+startMockServiceWorker().then(() => {
+  const root = ReactDOM.createRoot(
+    document.getElementById('root') as HTMLElement
+  );
+
+  root.render(
+    <React.StrictMode>
+      <Router>
+        <App />
+      </Router>
+    </React.StrictMode>
+  );
+});
