@@ -40,6 +40,34 @@ p {
 
 /* ----- Interactivity ----- */
 
+table {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+}
+
+table tr:nth-of-type(2n) {
+  background-color: var(--color-blue-grey-50);
+}
+
+td,
+th {
+  vertical-align: middle;
+  padding: var(--px-12) var(--px-4);
+}
+
+thead {
+  border-bottom: var(--px-2) solid var(--color-blue-grey-100);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ----- Interactivity ----- */
+
 .cursor-pointer {
   cursor: pointer;
 }
