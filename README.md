@@ -1,13 +1,22 @@
-# Flexible React Starter
+# Flexible React Stack
 
-This is a React starter repo with minimal opinions. We all know how fast the
-front-end landscape is changing. So instead of locking you into a specific
-stack, this guide shows you what options are available at each step and how to
-create a custom stack with your preferred options.
+This guide will help you build your React app without enforcing strong opinions.
+For example, you will be able to choose between a classic React, Next.js, Remix
+or any other framework of your choice. We all know how fast the front-end
+landscape is changing. So instead of locking you into a specific stack, this
+guide talks about the options available at each step and lets you decide what
+you want to include in your stack.
 
-Another advantage of this approach is that you know exactly how your stack is
-built. When that new shiny technology comes along, you are in a better position
-to slot it in!
+Another advantage of this approach is that you know exactly what your stack
+contains. When that new shiny technology comes along, you are in a better
+position to slot it in!
+
+As we build our stack, we will also build the following sample app in parallel.
+
+![screenshot](assets/screenshot.png)
+
+For a quick test drive of the final application, follow the instructions below
+for a development build or a production build.
 
 ## Development Build
 
