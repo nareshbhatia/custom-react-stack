@@ -180,6 +180,22 @@ thead {
   margin-top: var(--sp-3);
 }
 
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-1 {
+  margin-bottom: var(--sp-1);
+}
+
+.mb-2 {
+  margin-bottom: var(--sp-2);
+}
+
+.mb-3 {
+  margin-bottom: var(--sp-3);
+}
+
 .ml-0 {
   margin-left: 0;
 }
@@ -194,6 +210,22 @@ thead {
 
 .ml-3 {
   margin-left: var(--sp-3);
+}
+
+.mr-0 {
+  margin-right: 0;
+}
+
+.mr-1 {
+  margin-right: var(--sp-1);
+}
+
+.mr-2 {
+  margin-right: var(--sp-2);
+}
+
+.mr-3 {
+  margin-right: var(--sp-3);
 }
 
 /* ----- Padding ----- */
