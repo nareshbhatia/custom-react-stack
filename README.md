@@ -62,7 +62,7 @@ npm run storybook  # you can also run it from the root directory
 npm run test
 ```
 
-## Running End-to-End Tests (Not Started)
+## Running End-to-End Tests
 
 ```sh
 npm run dev # starts a local server hosting the react app

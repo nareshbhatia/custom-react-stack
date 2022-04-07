@@ -16,6 +16,8 @@ export const Header: React.FC = ({ children }) => {
     <header className="appbar">
       <span
         className="flex-1 h6sm line-height-none cursor-pointer"
+        role="navigation"
+        aria-label="Home"
         onClick={navigateToHome}
       >
         {children}
@@ -24,6 +26,8 @@ export const Header: React.FC = ({ children }) => {
         <button
           type="button"
           title="Settings"
+          role="navigation"
+          aria-label="Settings"
           className="bg-primary-main border-none cursor-pointer ml-1"
           onClick={navigateToSettings}
         >

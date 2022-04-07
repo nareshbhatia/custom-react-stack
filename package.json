@@ -15,8 +15,9 @@
     "lint": "turbo run lint",
     "test": "turbo run test",
     "clean": "turbo run clean && rm -rf node_modules",
-    "format": "prettier --write README.md \"**/{src,public}/**/*.{js,jsx,ts,tsx,json,md}\"",
-    "storybook": "cd storybook && npm run storybook"
+    "format": "prettier --write README.md \"**/{src,public}/**/*.{js,jsx,ts,tsx,json,md}\" \"**/cypress/integration/**/*\"",
+    "storybook": "cd storybook && npm run storybook",
+    "cypress": "cd apps/react-app && npm run cypress"
   },
   "devDependencies": {
     "prettier": "^2.6.2",
