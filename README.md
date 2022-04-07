@@ -71,6 +71,12 @@ npm run dev # starts a local server hosting the react app
 npm run cypress
 ```
 
+## Code Formatting
+
+```sh
+npm run format
+```
+
 ## TODO
 
 - Update dependencies on `@storybook/react` from `next` to the latest version
