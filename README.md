@@ -28,9 +28,12 @@ npm run dev
 Open browser windows at each of the following URLs to see the respective demo
 apps:
 
-1. http://localhost:3000/: React demo
-2. http://localhost:3001/: Next.js demo
-3. http://localhost:3001/: Remix demo
+1. http://localhost:3000/: React App
+2. http://localhost:3001/: Next.js App (not stated)
+3. http://localhost:3002/: Remix App (not started)
+
+Note that the React App fetches mock data from MSW, whereas the other two apps
+fetch real data from the movie-api.
 
 > Note: Do not run `npm install` in any of the subdirectories. It will break the
 > build. There should be only one `package-lock.json` file in the entire repo
@@ -53,8 +56,25 @@ npm install
 npm run storybook  # you can also run it from the root directory
 ```
 
+## Running Unit Tests
+
+```bash
+npm run test
+```
+
+## Running End-to-End Tests (Not Started)
+
+```sh
+npm run dev # starts a local server hosting the react app
+
+# run cypress in a different shell
+npm run cypress
+```
+
 ## TODO
 
 - Update dependencies on `@storybook/react` from `next` to the latest version
   when [this Storybook PR](https://github.com/storybookjs/storybook/pull/17215)
   gets merged (add support for React 18).
+- Take out overrides of react and react-dom in `/package.json` when version 18
+  is automatically hoisted instead of version 17.

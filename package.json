@@ -11,7 +11,9 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
+    "graph": "turbo run build --graph",
     "lint": "turbo run lint",
+    "test": "turbo run test",
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write README.md \"**/{src,public}/**/*.{js,jsx,ts,tsx,json,md}\"",
     "storybook": "cd storybook && npm run storybook"
@@ -19,6 +21,10 @@
   "devDependencies": {
     "prettier": "^2.6.2",
     "turbo": "latest"
+  },
+  "overrides": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "engines": {
     "npm": ">=7.0.0",
