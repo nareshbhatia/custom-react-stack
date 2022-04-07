@@ -1,12 +1,13 @@
 import * as React from 'react';
 
-export interface ButtonProps {
+interface ButtonProps {
   rootClass?: string;
   color?: 'default' | 'primary' | 'secondary';
   disabled?: boolean;
   size?: 'small' | 'medium' | 'large';
   variant?: 'contained' | 'outlined';
   children?: React.ReactNode;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
 export const Button = ({
@@ -16,6 +17,7 @@ export const Button = ({
   size = 'medium',
   variant = 'contained',
   children,
+  onClick,
 }: ButtonProps) => {
   const classes = [];
 
@@ -87,5 +89,9 @@ export const Button = ({
     }
   }
 
-  return <button className={classes.join(' ')}>{children}</button>;
+  return (
+    <button className={classes.join(' ')} onClick={onClick}>
+      {children}
+    </button>
+  );
 };

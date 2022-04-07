@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { MovieList } from '../../components';
+import { MovieList } from 'ui-lib';
 import { useMovies } from './useMovies';
 
 export function MovieListContainer() {

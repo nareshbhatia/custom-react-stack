@@ -4,10 +4,14 @@
   "main": "./index.tsx",
   "types": "./index.tsx",
   "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
   "devDependencies": {
     "@storybook/react": "next",
     "@types/react": "^17.0.43",
     "@types/react-dom": "^17.0.14",
+    "movie-models": "*",
     "tsconfig": "*",
     "config": "*",
     "typescript": "^4.6.3"

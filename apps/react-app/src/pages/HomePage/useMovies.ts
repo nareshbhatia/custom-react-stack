@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Movie } from '../../models';
+import { Movie } from 'movie-models';
 
 /**
  * Hook to fetch movies

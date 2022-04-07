@@ -1,5 +1,5 @@
+import { Movie } from 'movie-models';
 import { Button } from 'ui-lib';
-import { Movie } from '../../models';
 
 interface MovieListProps {
   movies: Array<Movie>;

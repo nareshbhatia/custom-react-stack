@@ -5,6 +5,7 @@ import { Button } from './Button';
 export default {
   title: 'Components/Button',
   component: Button,
+  argTypes: { onClick: { action: 'clicked' } },
 } as Meta;
 
 const Template: Story = (args) => (
@@ -14,6 +15,7 @@ const Template: Story = (args) => (
     disabled={args.disabled}
     size={args.size}
     variant={args.variant}
+    onClick={args.onClick}
   >
     {args.text}
   </Button>
