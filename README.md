@@ -13,7 +13,9 @@ position to slot it in!
 
 As we build our stack, we will also build the following sample app in parallel.
 
-![screenshot](assets/screenshot.png)
+![Home Page](assets/home-page.png)
+
+![Settings Page](assets/settings-page.png)
 
 For a quick test drive of the final application, follow the instructions below
 for a development build or a production build.
