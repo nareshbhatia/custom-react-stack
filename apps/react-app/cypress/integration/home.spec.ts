@@ -12,7 +12,7 @@ describe('Home page', function () {
 
     // Go to Settings Page
     cy.get('[aria-label="Settings"]').click();
-    cy.contains('Settings');
+    cy.contains('Manage your Family Plan');
 
     // Go back to Home Page
     cy.get('[aria-label="Home"]').click();

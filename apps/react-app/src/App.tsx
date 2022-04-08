@@ -6,7 +6,7 @@ import { HomePage, NotFoundPage, SettingsPage } from './pages';
 export function App() {
   return (
     <React.Fragment>
-      <Header>React App</Header>
+      <Header>Movie Magic</Header>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/settings" element={<SettingsPage />} />

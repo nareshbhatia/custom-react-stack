@@ -17,7 +17,7 @@ export default {
 export const HeaderStory = () => {
   return (
     <Router>
-      <Header>React App</Header>
+      <Header>Movie Magic</Header>
     </Router>
   );
 };
