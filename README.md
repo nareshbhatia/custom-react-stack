@@ -33,7 +33,7 @@ apps:
 3. http://localhost:3002/: Remix App (not started)
 
 Note that the React App fetches mock data from MSW, whereas the other two apps
-fetch real data from the movie-api.
+fetch real data from the movie-magic-api.
 
 > Note: Do not run `npm install` in any of the subdirectories. It will break the
 > build. There should be only one `package-lock.json` file in the entire repo

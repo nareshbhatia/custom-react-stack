@@ -17,7 +17,7 @@
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write README.md \"**/{src,public}/**/*.{js,jsx,ts,tsx,json,md}\" \"**/cypress/integration/**/*\"",
     "storybook": "cd storybook && npm run storybook",
-    "cypress": "cd apps/react-app && npm run cypress"
+    "cypress": "cd apps/movie-magic-react && npm run cypress"
   },
   "devDependencies": {
     "prettier": "^2.6.2",

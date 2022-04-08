@@ -1,6 +1,6 @@
 {
-  "name": "movie-api",
-  "description": "Movie API",
+  "name": "movie-magic-api",
+  "description": "Movie Magic API",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
