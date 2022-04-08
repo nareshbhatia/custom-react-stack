@@ -28,11 +28,11 @@ npm run dev
 Open browser windows at each of the following URLs to see the respective demo
 apps:
 
-1. http://localhost:3000/: React App
-2. http://localhost:3001/: Next.js App (not stated)
-3. http://localhost:3002/: Remix App (not started)
+1. http://localhost:3000/: Movie Magic | React
+2. http://localhost:3001/: Movie Magic | Next.js (not stated)
+3. http://localhost:3002/: Movie Magic | Remix (not started)
 
-Note that the React App fetches mock data from MSW, whereas the other two apps
+Note that the React app fetches mock data from MSW, whereas the other two apps
 fetch real data from the movie-magic-api.
 
 > Note: Do not run `npm install` in any of the subdirectories. It will break the
