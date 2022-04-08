@@ -31,7 +31,7 @@ Open browser windows at each of the following URLs to see the respective demo
 apps:
 
 1. http://localhost:3000/: Movie Magic | React
-2. http://localhost:3001/: Movie Magic | Next.js (not stated)
+2. http://localhost:3001/: Movie Magic | Next.js
 3. http://localhost:3002/: Movie Magic | Remix (not started)
 
 Note that the React app fetches mock data from MSW, whereas the other two apps
@@ -78,11 +78,3 @@ npm run cypress
 ```sh
 npm run format
 ```
-
-## TODO
-
-- Update dependencies on `@storybook/react` from `next` to the latest version
-  when [this Storybook PR](https://github.com/storybookjs/storybook/pull/17215)
-  gets merged (add support for React 18).
-- Take out overrides of react and react-dom in `/package.json` when version 18
-  is automatically hoisted instead of version 17.
