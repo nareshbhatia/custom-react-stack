@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { Movie } from 'movie-models';
 import { Button } from 'ui-lib';
 
