@@ -17,7 +17,5 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true
-  },
-  "include": ["src", "next-env.d.ts"],
-  "exclude": ["node_modules"]
+  }
 }

@@ -1,11 +1,15 @@
 import React from 'react';
 import { Header } from '../Header';
 
-export const PageLayout: React.FC = ({ children }) => {
+interface PageLayoutProps {
+  children?: React.ReactNode;
+}
+
+export function PageLayout({ children }: PageLayoutProps) {
   return (
     <React.Fragment>
       <Header>Movie Magic</Header>
       {children}
     </React.Fragment>
   );
-};
+}

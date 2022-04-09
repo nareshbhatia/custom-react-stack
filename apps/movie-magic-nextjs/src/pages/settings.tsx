@@ -1,5 +1,4 @@
 import type { ReactElement } from 'react';
-import type { NextPage } from 'next';
 import { PlanMember } from 'movie-models';
 import { PageLayout } from '../components/Layouts';
 import { Button } from 'ui-lib';
@@ -8,7 +7,7 @@ interface SettingsPageProps {
   planMembers: Array<PlanMember>;
 }
 
-const SettingsPage: NextPage = ({ planMembers }: SettingsPageProps) => {
+const SettingsPage = ({ planMembers }: SettingsPageProps) => {
   return (
     <div className="p-3">
       <div className="card p-4">

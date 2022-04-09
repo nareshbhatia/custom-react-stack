@@ -2,7 +2,11 @@ import React from 'react';
 import { CogIcon } from '@heroicons/react/outline';
 import { useRouter } from 'next/router';
 
-export const Header: React.FC = ({ children }) => {
+interface HeaderProps {
+  children?: React.ReactNode;
+}
+
+export function Header({ children }: HeaderProps) {
   const router = useRouter();
 
   const navigateToHome = () => {
@@ -37,4 +41,4 @@ export const Header: React.FC = ({ children }) => {
       </div>
     </header>
   );
-};
+}

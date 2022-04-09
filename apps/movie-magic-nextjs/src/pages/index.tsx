@@ -1,5 +1,4 @@
 import type { ReactElement } from 'react';
-import type { NextPage } from 'next';
 import { Movie } from 'movie-models';
 import { MovieList } from 'ui-lib';
 import { PageLayout } from '../components/Layouts';
@@ -8,7 +7,7 @@ interface HomePageProps {
   movies: Array<Movie>;
 }
 
-const HomePage: NextPage = ({ movies }: HomePageProps) => {
+const HomePage = ({ movies }: HomePageProps) => {
   return (
     <div className="p-3">
       <div className="card p-2">
@@ -24,8 +23,8 @@ HomePage.getLayout = function getLayout(page: ReactElement) {
 };
 
 export async function getServerSideProps() {
-  const apiUrl = process.env.API_URL;
-  const resMovies = await fetch(`${apiUrl}/top-10-movies`);
+  const API_URL = process.env.API_URL;
+  const resMovies = await fetch(`${API_URL}/top-10-movies`);
   const movies = await resMovies.json();
 
   return {

@@ -1,7 +1,12 @@
+import React from 'react';
 import { CogIcon } from '@heroicons/react/outline';
 import { useNavigate } from 'react-router-dom';
 
-export const Header: React.FC = ({ children }) => {
+interface HeaderProps {
+  children?: React.ReactNode;
+}
+
+export function Header({ children }: HeaderProps) {
   const navigate = useNavigate();
 
   const navigateToHome = () => {
@@ -36,4 +41,4 @@ export const Header: React.FC = ({ children }) => {
       </div>
     </header>
   );
-};
+}
