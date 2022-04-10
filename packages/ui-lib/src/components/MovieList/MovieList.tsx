@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Movie } from 'movie-models';
-import { Button } from 'ui-lib';
+import { Button } from '../Button';
 
 interface MovieListProps {
   movies: Array<Movie>;
