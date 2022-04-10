@@ -2,7 +2,7 @@ import type { LoaderFunction } from '@remix-run/node';
 import { json } from '@remix-run/node';
 import { useLoaderData } from '@remix-run/react';
 import { Movie } from 'movie-models';
-// import { MovieList } from 'ui-lib';
+import { MovieList } from 'ui-lib';
 
 type HomePageData = {
   movies: Array<Movie>;
@@ -27,7 +27,7 @@ export default function HomePage() {
     <div className="p-3">
       <div className="card p-2">
         <h2 className="h5 line-height-none mb-2">Top 10 Movies Of All Time</h2>
-        <div>{movies.length} movies</div>
+        <MovieList movies={movies} />
       </div>
     </div>
   );

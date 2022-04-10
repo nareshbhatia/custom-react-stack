@@ -1,11 +1,19 @@
 {
   "name": "ui-lib",
   "version": "0.0.0",
-  "main": "./index.tsx",
-  "types": "./index.tsx",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
   "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
   "scripts": {
     "test": "jest --coverage",
+    "build": "tsup index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup index.tsx --format esm,cjs --watch --dts --external react",
+    "lint": "TIMING=1 eslint src --fix",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "devDependencies": {
@@ -21,8 +29,10 @@
     "config": "*",
     "jest": "^27.5.1",
     "movie-models": "*",
-    "tsconfig": "*",
+    "react": "^18.0.0",
     "ts-jest": "^27.1.4",
+    "tsconfig": "*",
+    "tsup": "^5.12.4",
     "typescript": "^4.6.3"
   }
 }
