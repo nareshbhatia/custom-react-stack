@@ -32,7 +32,7 @@ apps:
 
 1. http://localhost:3000/: Movie Magic | React
 2. http://localhost:3001/: Movie Magic | Next.js
-3. http://localhost:3002/: Movie Magic | Remix (not started)
+3. http://localhost:3002/: Movie Magic | Remix
 
 Note that the React app fetches mock data from MSW, whereas the other two apps
 fetch real data from the movie-magic-api.
@@ -48,6 +48,26 @@ To build all apps and packages, run the following command:
 ```bash
 npm install
 npm run build
+```
+
+## Clean Build
+
+Removes all build artifacts and performs a clean build.
+
+```bash
+npm run clean
+npm install
+npm run dev
+```
+
+For an "aggressive" clean build, add one more step as shown below. This wil
+build the lock file from scratch.
+
+```bash
+npm run clean
+rm package-lock.json
+npm install
+npm run dev
 ```
 
 ## Running Storybook
