@@ -1,6 +1,6 @@
 import type { ReactElement } from 'react';
 import { PlanMember } from 'movie-models';
-import { PageLayout } from '../components/Layouts';
+import { PageLayout } from '../components/PageLayout';
 import { Button } from 'ui-lib';
 
 interface SettingsPageProps {

@@ -1,17 +1,16 @@
 import * as React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { Header } from './components';
+import { PageLayout } from './components';
 import { HomePage, NotFoundPage, SettingsPage } from './pages';
 
 export function App() {
   return (
-    <React.Fragment>
-      <Header>Movie Magic</Header>
-      <Routes>
+    <Routes>
+      <Route element={<PageLayout>Movie Magic</PageLayout>}>
         <Route path="/" element={<HomePage />} />
         <Route path="/settings" element={<SettingsPage />} />
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>
-    </React.Fragment>
+      </Route>
+      <Route path="*" element={<NotFoundPage />} />
+    </Routes>
   );
 }

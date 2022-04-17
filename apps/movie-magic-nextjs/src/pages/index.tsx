@@ -1,7 +1,7 @@
 import type { ReactElement } from 'react';
 import { Movie } from 'movie-models';
 import { MovieList } from 'ui-lib';
-import { PageLayout } from '../components/Layouts';
+import { PageLayout } from '../components/PageLayout';
 
 interface HomePageProps {
   movies: Array<Movie>;
