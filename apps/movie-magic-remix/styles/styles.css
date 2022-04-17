@@ -1,0 +1,38 @@
+/* inter-regular - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+
+  /* avoid showing invisible text - see https://web.dev/font-display/ */
+  font-display: swap;
+
+  src: url('/fonts/inter-v7-latin-regular.woff2') format('woff2'),
+    url('/fonts/inter-v7-latin-regular.woff') format('woff');
+}
+
+/* inter-500 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+
+  /* avoid showing invisible text - see https://web.dev/font-display/ */
+  font-display: swap;
+
+  src: url('/fonts/inter-v7-latin-500.woff2') format('woff2'),
+    url('/fonts/inter-v7-latin-500.woff') format('woff');
+}
+
+/* inter-600 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+
+  /* avoid showing invisible text - see https://web.dev/font-display/ */
+  font-display: swap;
+
+  src: url('/fonts/inter-v7-latin-600.woff2') format('woff2'),
+    url('/fonts/inter-v7-latin-600.woff') format('woff');
+}

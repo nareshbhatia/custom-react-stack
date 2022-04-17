@@ -7,7 +7,8 @@ import {
   Scripts,
   ScrollRestoration,
 } from '@remix-run/react';
-import stylesHref from '../../../packages/ui-lib/src/styles/main.css';
+import mainStylesHref from '../../../packages/ui-lib/src/styles/main.css';
+import stylesHref from '../styles/styles.css';
 
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
@@ -41,6 +42,7 @@ export const links: LinksFunction = () => {
     },
 
     // load local styles
+    { rel: 'stylesheet', href: mainStylesHref },
     { rel: 'stylesheet', href: stylesHref },
   ];
 };
