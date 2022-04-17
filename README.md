@@ -1,4 +1,4 @@
-# Flexible React Stack
+# Custom React Stack
 
 This guide will help you build your React app without enforcing strong opinions.
 For example, you will be able to choose between a classic React, Next.js, Remix

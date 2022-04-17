@@ -1,5 +1,6 @@
 {
-  "name": "flexible-react-stack",
+  "name": "custom-react-stack",
+  "description": "A guide to building your own React stack, explaining options and tradeoffs along the way",
   "version": "0.0.0",
   "private": true,
   "author": "Naresh Bhatia",
