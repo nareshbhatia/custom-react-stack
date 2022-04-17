@@ -1,24 +1,38 @@
 # Custom React Stack
 
-This guide will help you build your React app without enforcing strong opinions.
-For example, you will be able to choose between a classic React, Next.js, Remix
-or any other framework of your choice. We all know how fast the front-end
-landscape is changing. So instead of locking you into a specific stack, this
-guide talks about the options available at each step and lets you decide what
-you want to include in your stack.
+React has a very rich ecosystem. For anything you want to do, there is probably
+a library or a framework available for it. That's great, but having too many
+options can also be very confusing. Do you want to start out simple or go for
+the ultimate because your app demands it? What's the right set of options for
+your specific use case?
 
-Another advantage of this approach is that you know exactly what your stack
-contains. When that new shiny technology comes along, you are in a better
-position to slot it in!
+This guide will help you build your own custom React stack, explaining key
+options and tradeoffs at each step.
 
-As we build our stack, we will also build the following sample app in parallel.
+Another advantage of this approach is that you will know exactly what's in your
+stack. When that new shiny technology comes along, you will be in a better
+position to slot it in.
+
+## Movie Magic - Our Sample App
+
+For the purpose of this exercise, imagine that you want to write a movie
+streaming app - _Movie Magic_. The app should present the available movie titles
+and help users make a choice. They should also be able to manage their
+subscription.
+
+Here's a very humble beginning, just two screens:
+
+1. A Home page showing a list of top 10 movies:
 
 ![Home Page](assets/home-page.png)
 
+2. A Settings page for users to manage their subscription:
+
 ![Settings Page](assets/settings-page.png)
 
-For a quick test drive of the final application, follow the instructions below
-for a development build or a production build.
+Click [here](https://custom-react-stack.vercel.app/) to test drive the final
+application. As you can tell, it doesn't do much yet. However, this is good
+enough for the purpose of our discussion.
 
 ## Development Build
 
