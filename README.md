@@ -35,7 +35,22 @@ application. As you can see, it doesn't do much yet. However, this is good
 enough for the purpose of our discussion. Let's start by discussing our
 architecture choices.
 
-## Architecture Choices
+## Tech Stack Options
+
+The diagram below shows the key items that make up our tech stack, along with
+some options. Subsequent sections will discuss the pros & cons of these options.
+
+![Tech Stack Options](assets/teck-stack-options.png)
+
+## Monorepo vs. Multi-repo
+
+WIP
+
+## Language
+
+WIP
+
+## CSR vs. SSR
 
 ### Client-Side Rendering (CSR)
 
@@ -73,7 +88,17 @@ tradeoff.
 Next.js and Remix are a two of the most popular Server-Side Rendering frameworks
 in the React ecosystem.
 
-## Development Build
+## Movie Magic Tech Stack
+
+Given the options discussed above, I decided to build Movie Magic using three
+different stacks to illustrate the differences: Classic React, Next.js & Remix.
+The chart below shows the decisions made within each stack.
+
+![Tech Stack Selection](assets/teck-stack-selection.png)
+
+## Building Movie Magic
+
+### Development Build
 
 ```bash
 npm install
@@ -94,7 +119,7 @@ fetch real data from the movie-magic-api.
 > build. There should be only one `package-lock.json` file in the entire repo
 > (at the root).
 
-## Production Build
+### Production Build
 
 To build all apps and packages, run the following command:
 
@@ -103,7 +128,7 @@ npm install
 npm run build
 ```
 
-## Clean Build
+### Clean Build
 
 Removes all build artifacts and performs a clean build.
 
