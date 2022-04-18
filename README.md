@@ -73,8 +73,8 @@ Here are some issues with the multi-repo approach:
 
 A solution that works better in such use cases is a monorepo.
 
-> Monorepo is a single repository containing multiple distinct projects, with
-> well-defined relationships.
+> Monorepo is a single repository containing **multiple distinct projects**,
+> with **well-defined relationships**.
 
 Here's an example of taking the multiple repos in the above diagram and
 replacing them with a single repo:
@@ -92,8 +92,8 @@ Here are the advantages of a monorepo:
 
 You can build a monorepo all by yourself by putting all your projects into one
 repo and figuring out a way to organize and build them. However, people
-generally use an off-the-shelf monorepo platform such as Lerna, npm workspaces,
-yarn workspaces, Turborepo or Nx. Both Turborepo and Nx provide some very
+generally use an off-the-shelf monorepo platform such as Lerna, Yarn Workspaces,
+npm Workspaces, Turborepo or Nx. Both Turborepo and Nx provide some very
 advanced features, but Turborepo is my favorite because it is less opinionated
 and allows me to integrate existing templates more easily into my monorepo.
 Also, each project has its own `package.json` file, making it easy for me to
@@ -104,7 +104,14 @@ root. This helps maintain a _single version policy_, however it has its own pros
 
 ## Language
 
-WIP
+JavaScript is one of the most popular programming languages in the world. It has
+a huge community behind it and plenty of learning resources. For simple
+applications, it works really well. However, as the complexity increases it is
+easier to introduce bugs due to its weak type checking. If your application
+deals with complex data structures, it is better to switch over to TypeScript
+because of its static type checking. The TypeScript compiler will catch many
+mistakes that will simply slip by JavaScript. TypeScript is also great for
+defining conceptual models that are shared between backend and frontend teams.
 
 ## CSR vs. SSR
 
