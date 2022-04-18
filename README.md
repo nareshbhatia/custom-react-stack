@@ -38,13 +38,69 @@ architecture choices.
 ## Tech Stack Options
 
 The diagram below shows the key items that make up our tech stack, along with
-some options. Subsequent sections will discuss the pros & cons of these options.
+some options. Subsequent sections will discuss the pros & cons of each option.
+Note that the diagram is meant to be read bottom up - imagine that we are
+building a stack.
 
 ![Tech Stack Options](assets/teck-stack-options.png)
 
 ## Monorepo vs. Multi-repo
 
-WIP
+For a really simple app, you can just create a single Git repo and call it a
+day. But what if you want to separate out reusable components into a library?
+Well, you can create a separate repo for it and put the compiled output in a
+binary repository (such as npm or Artifactory). See below. The app can pick up
+the library from the binary repository by adding a dependency to it. This is
+called a multi-repo set up (two repos in this case).
+
+![Simple Multi-Repo](assets/simple-multi-repo.png)
+
+Continuing this scenario, what happens when you have multiple applications and
+multiple libraries with complex dependencies on each other? Let's say we start
+adding a new repo for each application and each library. This is now starting to
+look ugly.
+
+![Complex Multi-Repo](assets/complex-multi-repo.png)
+
+Here are some issues with the multi-repo approach:
+
+- It is cumbersome to add new repos. You have to set up new tooling, new CI/CD
+  pipelines, add committers, and the list goes on.
+- You start to see duplicate code in your repos because people are reluctant to
+  put in the effort to create a new repo just to reuse code. It is much easier
+  to copy code from another repo.
+- It is difficult to maintain consistent tooling across repos.
+
+A solution that works better in such use cases is a monorepo.
+
+> Monorepo is a single repository containing multiple distinct projects, with
+> well-defined relationships.
+
+Here's an example of taking the multiple repos in the above diagram and
+replacing them with a single repo:
+
+![Monorepo](assets/monorepo.png)
+
+Here are the advantages of a monorepo:
+
+- No overhead to create new projects
+- Easy to refactor code for reuse
+- Consistent way of building every project
+- Bug fixes are available immediately to all dependent projects and can be
+  tested exhaustively before committing
+- Developers can confidently contribute to any project
+
+You can build a monorepo all by yourself by putting all your projects into one
+repo and figuring out a way to organize and build them. However, people
+generally use an off-the-shelf monorepo platform such as Lerna, npm workspaces,
+yarn workspaces, Turborepo or Nx. Both Turborepo and Nx provide some very
+advanced features, but Turborepo is my favorite because it is less opinionated
+and allows me to integrate existing templates more easily into my monorepo.
+Also, each project has its own `package.json` file, making it easy for me to
+track why I added a particular dependency. Nx, on the other hand, keeps the
+dependencies for all projects in a single giant `package.json` sitting at the
+root. This helps maintain a _single version policy_, however it has its own pros
+& cons (you can google for opinions).
 
 ## Language
 
