@@ -96,6 +96,10 @@ The chart below shows the decisions made within each stack.
 
 ![Tech Stack Selection](assets/teck-stack-selection.png)
 
+## Movie Magic Repo Structure
+
+![Repo Structure](assets/repo-structure.png)
+
 ## Building Movie Magic
 
 ### Development Build
