@@ -34,10 +34,10 @@
     "@storybook/addon-interactions": "^6.4.22",
     "@storybook/addon-links": "^6.4.22",
     "@storybook/react": "next",
-    "@storybook/testing-library": "^0.0.9",
-    "babel-loader": "^8.2.4",
+    "@storybook/testing-library": "^0.0.11",
+    "babel-loader": "^8.2.5",
     "babel-plugin-macros": "^3.1.0",
     "babel-plugin-polyfill-corejs3": "^0.5.2",
-    "core-js": "^3.22.0"
+    "core-js": "^3.22.2"
   }
 }
