@@ -95,11 +95,17 @@ figuring out a way to organize and build them. However, people generally use an
 off-the-shelf monorepo platform such as Lerna, Yarn Workspaces, npm Workspaces,
 Turborepo or Nx.
 
-Both Turborepo and Nx provide some very advanced features, but Turborepo is my
-favorite because it is less opinionated - it builds on top of npm or Yarn
-Workspaces. This approach allows me to integrate existing templates more easily
-into my monorepo. Each project has its own `package.json` file, making it easy
-to track why a particular dependency was added.
+Turborepo and Nx provide some advanced features:
+
+- Caching of build artifacts for faster builds
+- Parallelize builds based on dependencies
+- Build only the affected projects
+- Visualize dependency graph (this helps in avoiding cyclic dependencies)
+
+Turborepo is my favorite because it is less opinionated - it builds on top of
+npm or Yarn Workspaces. This approach allows me to integrate existing templates
+more easily into my monorepo. Each project has its own `package.json` file,
+making it easy to track why a particular dependency was added.
 
 Nx, on the other hand, keeps the dependencies for all projects in a single giant
 `package.json` sitting at the root. This helps maintain a _single version
