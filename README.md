@@ -90,17 +90,24 @@ Here are the advantages of a monorepo:
   tested exhaustively before committing
 - Developers can confidently contribute to any project
 
-You can build a monorepo all by yourself by putting all your projects into one
-repo and figuring out a way to organize and build them. However, people
-generally use an off-the-shelf monorepo platform such as Lerna, Yarn Workspaces,
-npm Workspaces, Turborepo or Nx. Both Turborepo and Nx provide some very
-advanced features, but Turborepo is my favorite because it is less opinionated
-and allows me to integrate existing templates more easily into my monorepo.
-Also, each project has its own `package.json` file, making it easy for me to
-track why I added a particular dependency. Nx, on the other hand, keeps the
-dependencies for all projects in a single giant `package.json` sitting at the
-root. This helps maintain a _single version policy_, however it has its own pros
-& cons (you can google for opinions).
+You can build a monorepo manually by putting all your projects into one repo and
+figuring out a way to organize and build them. However, people generally use an
+off-the-shelf monorepo platform such as Lerna, Yarn Workspaces, npm Workspaces,
+Turborepo or Nx.
+
+Both Turborepo and Nx provide some very advanced features, but Turborepo is my
+favorite because it is less opinionated - it builds on top of npm or Yarn
+Workspaces. This approach allows me to integrate existing templates more easily
+into my monorepo. Each project has its own `package.json` file, making it easy
+to track why a particular dependency was added.
+
+Nx, on the other hand, keeps the dependencies for all projects in a single giant
+`package.json` sitting at the root. This helps maintain a _single version
+policy_. However, this has its own pros & cons (you can google for opinions).
+Note that
+[Nx can be used in a bare-bones way without using Nx plugins](https://nx.dev/getting-started/nx-core).
+In this mode, Nx simply builds on top of npm or Yarn Workspaces and becomes
+equivalent to Turborepo.
 
 ## Language
 
