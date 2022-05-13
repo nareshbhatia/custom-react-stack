@@ -6,5 +6,9 @@
   "scripts": {
     "lint": "eslint src/**/*.ts*",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-custom": "*"
   }
 }
