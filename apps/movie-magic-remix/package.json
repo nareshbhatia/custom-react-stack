@@ -9,6 +9,7 @@
     "build": "remix build",
     "dev": "remix dev",
     "start": "remix-serve build",
+    "lint": "eslint app/**/*.ts*",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf build public/build"
   },
   "dependencies": {

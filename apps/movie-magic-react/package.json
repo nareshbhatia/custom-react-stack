@@ -6,6 +6,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
+    "lint": "eslint src/**/*.ts*",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
     "cypress": "cypress open"
   },

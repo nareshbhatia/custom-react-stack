@@ -8,7 +8,8 @@
     "start:debug": "ndb ts-node src/index.ts",
     "start:prod": "node dist",
     "dev": "nodemon --watch src -e ts --exec npm start",
-    "build": "tsc"
+    "build": "tsc",
+    "lint": "eslint src/**/*.ts*"
   },
   "dependencies": {
     "body-parser": "^1.20.0",
